@@ -1,0 +1,38 @@
+Version control system:(Also called source control)
+we can used to store versions of our software.
+It is a tool which is used by software developers to track the changes of our code.
+Types:
+Three types of version control system,They are--->
+1.>Local VCS--->Here version database is happening in our system, SO it is easy to track the versions
+of the software but the disadvantage is we cannot collaborate with your teammates as it is stored
+in our system.
+2.>Centralized VCS--->Here version database is in central server so that we can just checkout
+the required version of the software to our local system and work,and also others also others
+can also checkout the versions of software and work but the internet connecton between central
+server and local system is required to use the features of the central server.
+3.>Distributed VCS--->here there is a server that contains version database, instead of checking
+out the required version to our local system,here we can checkout the entire version database
+to our local system.Here version database is called repository.
+
+git config -l: to list the configurations.
+git config -l --show-origin: to show the path.
+git config --global user.name: for configuring the username.
+git config --global user.email:for configuring the email.
+git add .: to add the files in staging area.
+git commit -m: for  commiting our file.
+
+Every commit we commited to repository is called snapshot.
+Git creates every snapshot/commit a hash value to identify a snapshot and can be used to check out a specific commit.
+
+Git log to get the history of the commits and also hash value.
+git checkout with starting few digits of hash value to see the specified commit.
+
+.gitignore file we have to create,and in that file we write
+# Ignore file(comment)
+file name(now this file name will be ignored) when during commit this file will not be shown.
+
+git branch branchname: to create branch.
+git branch: to check branches.
+git merge branchname: to merge branch to master(to do this first we have to checkout to master branch).
+git branch -d branchname: to delete branch.
+
